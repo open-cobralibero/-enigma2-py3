@@ -117,15 +117,15 @@ class UpdatePlugin(Screen, ProtectedScreen):
 					elif 'en_EN' in message:
 						message = message['en_EN']
 					else:
-						message = _("The current image might not be stable.\nFor more information see %s.") % ("https://forums.openpli.org")
+						message = _("The current image might not be stable.\nFor more information see %s.") % ("https://cobraliberosat.net")
 
 			except Exception as er:
 				print("[UpdatePlugin] status error", er)
-				message = _("The current image might not be stable.\nFor more information see %s.") % ("https://forums.openpli.org")
+				message = _("The current image might not be stable.\nFor more information see %s.") % ("https://cobraliberosat.net")
 
 		# or display a generic warning if fetching failed
 		else:
-			message = _("The status of the current image could not be checked because %s can not be reached.") % ("https://openpli.org")
+			message = _("The status of the current image could not be checked because %s can not be reached.") % ("https://yton3.cobraliberosat.net")
 
 		# show the user the message first
 		if message is not None:
